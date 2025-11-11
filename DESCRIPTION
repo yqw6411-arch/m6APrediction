@@ -10,3 +10,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Imports: 
     randomForest
+URL: https://github.com/yqw6411-arch/m6APrediction
+BugReports: https://github.com/yqw6411-arch/m6APrediction/issues
