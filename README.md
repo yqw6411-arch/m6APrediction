@@ -17,11 +17,11 @@ Usage
 Load the package:
 
 r
-复制代码
+
 library(m6APrediction)
 Predict multiple RNA sites
 r
-复制代码
+
 # Load example model and data from the package
 model_path <- system.file("extdata", "rf_fit.rds", package="m6APrediction")
 data_path  <- system.file("extdata", "m6A_input_example.csv", package="m6APrediction")
@@ -38,7 +38,7 @@ res <- prediction_multiple(ml_fit, feature_df)
 head(res)
 Predict a single RNA site
 r
-复制代码
+
 single_res <- prediction_single(
   ml_fit,
   gc_content = 0.55,
