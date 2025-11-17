@@ -16,11 +16,11 @@ remotes::install_github("yqw6411-arch/m6APrediction")
 Usage
 Load the package:
 
-r
+
 
 library(m6APrediction)
 Predict multiple RNA sites
-r
+
 
 # Load example model and data from the package
 model_path <- system.file("extdata", "rf_fit.rds", package="m6APrediction")
@@ -37,7 +37,7 @@ feature_df$RNA_region <- factor(feature_df$RNA_region, levels = ml_fit$forest$xl
 res <- prediction_multiple(ml_fit, feature_df)
 head(res)
 Predict a single RNA site
-r
+
 
 single_res <- prediction_single(
   ml_fit,
